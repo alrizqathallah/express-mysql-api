@@ -10,18 +10,18 @@ Diharapkan repo ini dapat membantu siapapun diluar sana yang sedang mencari proy
 
 | Kategori                      | Teknologi                                                        |
 |-------------------------------|------------------------------------------------------------------|
-| **Runtime**/**Framework**     | **Node JS** (Runtime Service), `express` (Server Framework)      |
-| **Database**                  | **MySql** (Database), `mysql2` (Library Integration)             |
-| **Logging**                   | `morgan` (HTTP Logger), `winston` (Application Logger)           |
-| **Development Tools**         | `nodemon` (Server Refresher), `eslint` (Code Policy), `prettier` (Code Formatter), `lint-staged` (Git Filteting), `husky` (Git Hooks Manager)|
-| **Config**                    | `dotenv` (Security: Environment Variable)                        |
+| **Runtime**/**Framework**     | NodeJS (runtime service), `express` (server framework)      |
+| **Database**                  | MySql (database), `mysql2` (library integration)             |
+| **Logging**                   | `morgan` (http log), `winston` (app log)           |
+| **Development Tools**         | `nodemon` (server refresher), `eslint` (code policy), `prettier` (code formatter), `lint-staged` (git filteting), `husky` (git hooks)|
+| **Config**                    | `dotenv` (security: environment variable)                        |
 
 ---
 
 ## Prasyarat
 
 - Harus dipastikan **NodeJS** (v18+) sudah terinstal secara lokal
-- Harus sudah tersedia **MySQL** (v8+) dan siap digunakan
+- Harus sudah tersedia **MySQL** (v8+) yang siap digunakan
 - **Git** untuk penunjang pengembangan
 
 ---
