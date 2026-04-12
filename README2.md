@@ -329,6 +329,8 @@ Diharapkan repo ini dapat membantu siapapun diluar sana yang sedang mencari proy
    4. Jika ditemukan _error_ fatal yang tidak bisa diperbaiki otomatis, proses _commit_ akan **dibatalkan** dan terminal akan menampilkan pesan _error_-nya.
    5. Jika semua file bersih dan rapi, barulah _commit_ **berhasil** disimpan ke riwayat Git.
 
+---
+
 ## Menajalankan Proyek
 
 Untuk mempermudah proses pengembangan, pengujian, dan peluncuran aplikasi, perlu didaftarkan beberapa perintah pintasan (_shortcut_) ke dalam file konfigurasi utama proyek.
