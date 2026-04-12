@@ -328,3 +328,37 @@ Diharapkan repo ini dapat membantu siapapun diluar sana yang sedang mencari proy
    3. Lint-Staged mencari file `.js` yang telah diubah, lalu meyerahkannya ke **ESLint** dan **Prettier**.
    4. Jika ditemukan _error_ fatal yang tidak bisa diperbaiki otomatis, proses _commit_ akan **dibatalkan** dan terminal akan menampilkan pesan _error_-nya.
    5. Jika semua file bersih dan rapi, barulah _commit_ **berhasil** disimpan ke riwayat Git.
+
+## Menajalankan Proyek
+
+Untuk mempermudah proses pengembangan, pengujian, dan peluncuran aplikasi, perlu didaftarkan beberapa perintah pintasan (_shortcut_) ke dalam file konfigurasi utama proyek.
+
+**a. Penyesuaian pada `package.json`**
+
+Buka file `package.json`, cari bagian `"scripts"`, lalu ubah dengan lengkap isinya menjadi seperti dibawah:
+
+```json
+"scripts": {
+  "start": "node src/server.js",
+  "dev": "nodemon",
+  "lint": "eslint .",
+  "lint:fix": "eslint . --fix",
+  "format": "prettier --write .",
+  "prepare": "husky"
+}
+```
+
+**Catatan:** Jika file utama aplikasi belum dibuat, pastikan membuat file `src/server.js` terlebih dahulu agar perintah `start` dan `dev` dapat berjalan.
+
+**b. Daftar Perintah dan Fungsinya**
+
+Seteleah scripts ditambahkan, proyek dapat dijalankan dengan perintah-perintah berikut melalui terminal:
+
+| Perintah           | Deskripsi                                                                                                                                                                                                                                                                                   |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `npm run dev`      | Menjalankan sever dalam **Mode Pengembangan** (**_Development Mode_**). Perintah ini akan memanggil `nodemon`, serta otomatis akan melakukan _restart_ setiap kali perubahan pada file di dalam folder `src`                                                                                |
+| `npm run start`    | Menjalankan server dalam **Mode Produksi** (**_Production Mode_**). Perintah ini akan memanggil `node` secara langsugn tanpa fitur _auto-reload_. Ini adalah perintah standar yang digunakan saat aplikasi di server asli (misalnya menggunakan _process manager_ seperti PM2 atau Docker). |
+| `npm run format`   | Merapikan seluruh struktur kode didalam proyek                                                                                                                                                                                                                                              |
+| `npm run lint`     | Memindai kode untuk mencari _error_ logika atau pelanggaran standar penulisan                                                                                                                                                                                                               |
+| `npm run lint:fix` | Memperbaiki _error_ ESLint secara otomatis (jika memungkinkan).                                                                                                                                                                                                                             |
+| `npm run prepare`  | Menginisialisasi _Git Hooks_ (Husky) untuk komputer baru.                                                                                                                                                                                                                                   |
