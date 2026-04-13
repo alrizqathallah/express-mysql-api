@@ -1,0 +1,45 @@
+{
+  "name": "express-mysql-api",
+  "version": "1.0.0",
+  "description": "Repositori ini merupakan proyek pembelajaran yang memfokuskan pada pengembangan Backend REST API menggunakan **ExpressJS** dan Database **MySQL**, dilengkapi dengan alat pengembangan serta linting modern.",
+  "main": "./src/server.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "nodemon",
+    "lint": "eslint .",
+    "lint:fic": "eslint . --fix",
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alrizqathallah/express-mysql-api.git"
+  },
+  "keywords": [],
+  "author": "alrizq athallah sulung esa",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/alrizqathallah/express-mysql-api/issues"
+  },
+  "homepage": "https://github.com/alrizqathallah/express-mysql-api#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "morgan": "^1.10.1",
+    "mysql2": "^3.22.0",
+    "winston": "^3.19.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.5",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "globals": "^17.5.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "nodemon": "^3.1.14",
+    "prettier": "^3.8.2"
+  }
+}

@@ -1,0 +1,5 @@
+node_modules
+.env.local
+.eslintrc.json
+package-lock.json
+README3.md 
