@@ -18,17 +18,19 @@
   "keywords": [],
   "author": "alrizq athallah sulung esa",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/alrizqathallah/express-mysql-api/issues"
   },
   "homepage": "https://github.com/alrizqathallah/express-mysql-api#readme",
   "dependencies": {
+    "chalk": "^5.6.2",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "morgan": "^1.10.1",
     "mysql2": "^3.22.0",
-    "winston": "^3.19.0"
+    "winston": "^3.19.0",
+    "winston-daily-rotate-file": "^5.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.5",

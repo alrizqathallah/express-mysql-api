@@ -1,0 +1,5 @@
+{"level":"info","message":"::1 - GET /api/health 200 - 45 bytes - 3.607 ms","timestamp":"2026-04-13 12:33:50"}
+{"level":"info","message":"::1 - GET /api/health 200 - 45 bytes - 2.867 ms","timestamp":"2026-04-13 12:41:17"}
+{"level":"info","message":"::1 - GET /api/health 200 - 45 bytes - 3.080 ms","timestamp":"2026-04-13 12:48:53"}
+{"level":"info","message":"::1 - GET /api/health 200 - 99 bytes - 12.287 ms","timestamp":"2026-04-13 13:21:39"}
+{"level":"info","message":"::1 - POST /api/users 201 - 153 bytes - 422.759 ms","timestamp":"2026-04-13 13:26:27"}
