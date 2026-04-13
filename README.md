@@ -364,3 +364,28 @@ Seteleah scripts ditambahkan, proyek dapat dijalankan dengan perintah-perintah b
 | `npm run lint`     | Memindai kode untuk mencari _error_ logika atau pelanggaran standar penulisan                                                                                                                                                                                                               |
 | `npm run lint:fix` | Memperbaiki _error_ ESLint secara otomatis (jika memungkinkan).                                                                                                                                                                                                                             |
 | `npm run prepare`  | Menginisialisasi _Git Hooks_ (Husky) untuk komputer baru.                                                                                                                                                                                                                                   |
+
+## Struktur Proyek
+
+```
+.
+├── .husky/
+├── src/
+|   ├── app/
+|   |  ├── configs/
+|   |  ├── controllers/
+|   |  ├── middlewares/
+|   |  ├── models/
+|   |  ├── routes/
+|   |  ├── app.js
+│   └── server.js
+├── .env.example
+├── .gitignore
+├── .lintstagedrc.json
+├── .prettierignore
+├── .prettierrc
+├── eslint.config.mjs
+├── nodemon.json
+├── package.json
+└── README.md
+```
